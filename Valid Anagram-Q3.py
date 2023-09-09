@@ -1,0 +1,11 @@
+#3564 ms
+#16.7 mb
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s)!=len(t):return False
+        else:
+            for i in s:
+                if t.count(i)!=s.count(i):
+                    return False
+        return True
